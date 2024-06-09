@@ -25,13 +25,15 @@
   padding-top: 20px;
 }
 
-.about-me-title {
+.title {
   text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .text-container {
   position: relative;
-  height: 2rem; /* Adjust based on your text size */
+  height: 2rem;
   overflow: hidden;
 }
 
@@ -40,9 +42,43 @@
   width: 100%;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s; /* Adjust the transition duration as needed */
 }
 
 .visible {
   opacity: 1;
+}
+
+.divider {
+  color: black;
+  border: none;
+  border-top: solid 2px black;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.about-me-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-me-text {
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.projects-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border: solid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-description,
+.project-image {
+  border: solid;
 }
