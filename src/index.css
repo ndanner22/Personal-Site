@@ -29,11 +29,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 0.5),
-      rgba(0, 0, 255, 0.5)
-    ),
-    url("../public/vite.svg");
+    to right,
+    rgba(48, 208, 211, 0.614),
+    rgba(155, 77, 227, 0.564)
+  );
 }
 
 h1 {
