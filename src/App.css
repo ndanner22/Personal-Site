@@ -16,3 +16,33 @@
   display: flex;
   justify-content: space-around;
 }
+
+.nav-link {
+  font-size: 20px;
+}
+
+.about-me-container {
+  padding-top: 20px;
+}
+
+.about-me-title {
+  text-align: center;
+}
+
+.text-container {
+  position: relative;
+  height: 2rem; /* Adjust based on your text size */
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s; /* Adjust the transition duration as needed */
+}
+
+.visible {
+  opacity: 1;
+}
