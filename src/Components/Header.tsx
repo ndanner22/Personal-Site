@@ -1,3 +1,9 @@
 export default function Header() {
-  return <h1>Placeholder Header</h1>;
+  return (
+    <img
+      className="neil-portrait"
+      src="../../public/images/portrait.png"
+      alt="picture of Neil"
+    />
+  );
 }
