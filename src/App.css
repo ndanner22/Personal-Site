@@ -11,9 +11,8 @@
   border-radius: 50%;
 }
 
-.nav-container {
+.nav-bar {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid;
+  justify-content: space-around;
 }
