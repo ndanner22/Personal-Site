@@ -42,9 +42,13 @@ export default function ProjectTextAnimation() {
             index === currentIndex ? "project-text-visible" : ""
           }`}
         >
-          <p>{text.title}</p>
-          <p>{text.description}</p>
-          <img src={text.image} className="rotating-project-image" />
+          <div className="project-stuff">
+            <p>{text.title}</p>
+            <p>{text.description}</p>
+          </div>
+          <div className="project-image">
+            <img src={text.image} className="rotating-project-image" />
+          </div>
         </div>
       ))}
     </div>
