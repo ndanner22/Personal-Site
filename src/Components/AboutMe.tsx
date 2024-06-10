@@ -1,5 +1,4 @@
 import TextAnimation from "./TextAnimation";
-import "../App.css";
 
 export default function AboutMe() {
   return (
