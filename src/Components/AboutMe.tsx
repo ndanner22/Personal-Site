@@ -2,7 +2,7 @@ import TextAnimation from "./TextAnimation";
 
 export default function AboutMe() {
   return (
-    <div className="about-me-container">
+    <div id="AboutMe" className="about-me-container">
       <h2 className="title">Hi, I'm Neil 👋</h2>
       <div className="about-me-body">
         <p className="about-me-text">
