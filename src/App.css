@@ -79,9 +79,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid;
 }
 
-.project-description {
+.project-body {
   min-height: 300px;
   width: 100%;
   display: flex;
@@ -106,14 +107,6 @@
 
 .project-text-visible {
   opacity: 1;
-}
-
-.project-body {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 25px;
-  align-items: center;
 }
 
 .project-image-file {
