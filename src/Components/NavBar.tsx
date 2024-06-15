@@ -1,18 +1,24 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export default function Nav() {
+export default function NavBar() {
+  const [commonLinks, setCommonLinks] = useState([
+    "Home",
+    "Projects",
+    "Contact",
+  ]);
   return (
     <>
       <ul className="nav-bar">
-        <AnchorLink href="#AboutMe" className="nav-link">
-          About Me
-        </AnchorLink>
-        <AnchorLink href="#Projects" className="nav-link">
+        <Link className="nav-link" to="/">
+          Home
+        </Link>
+        <Link className="nav-link" to="/Projects">
           Projects
-        </AnchorLink>
-        <AnchorLink href="#Contact" className="nav-link">
+        </Link>
+        <Link className="nav-link" to="/Contact">
           Contact
-        </AnchorLink>
+        </Link>
       </ul>
       <hr className="divider" />
     </>

@@ -1,3 +1,9 @@
+.header {
+  width: 100%;
+  padding: 1rem 0; /* Example padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
 .header-container {
   width: 80%;
   display: flex;
@@ -8,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.neil-portrait {
+.header-photo {
   width: 200px;
   border-radius: 50%;
 }
