@@ -96,13 +96,37 @@
   min-height: 300px;
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: none;
+  flex: 0 1 45%;
+  justify-content: center;
+  align-items: center;
+}
+.project-image {
+  flex: 0 1 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-list-item {
+  font-size: 20px;
+  font-weight: 600;
+}
 .project-text-container {
   position: relative;
   overflow: hidden;
   width: 100%;
   display: flex;
+  flex: 1;
 }
 
 .project-text {
@@ -135,4 +159,57 @@
 
 .project-stuff {
   align-content: center;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Example maximum width */
+  margin: 0 auto; /* Center align */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-item.active {
+  flex: 0 0 100%; /* Ensure active slide takes full width */
+}
+
+.carousel-image {
+  width: 90%; /* Ensure images fill the entire width of the carousel item */
+  height: 500px; /* Fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover entire container */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1; /* Ensure arrows appear above carousel items */
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow.next {
+  right: 10px;
 }
