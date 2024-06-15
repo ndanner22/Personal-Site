@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function NavBar() {
-  const [commonLinks, setCommonLinks] = useState([
-    "Home",
-    "Projects",
-    "Contact",
-  ]);
   return (
     <>
       <ul className="nav-bar">

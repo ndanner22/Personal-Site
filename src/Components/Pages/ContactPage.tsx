@@ -1,3 +1,7 @@
 export default function ContactPage() {
-  return <h1>Contact Page</h1>;
+  return (
+    <div className="contact-container">
+      <h2 className="title">Contact Page</h2>
+    </div>
+  );
 }

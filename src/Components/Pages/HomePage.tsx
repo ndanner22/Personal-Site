@@ -1,5 +1,5 @@
 import AboutMe from "../AboutMe";
-import Projects from "../Projects";
+import Projects from "../HomeProjects";
 import Contact from "../Contact";
 
 export default function HomePage() {

@@ -1,5 +1,3 @@
-import TextAnimation from "./TextAnimation";
-
 export default function AboutMe() {
   return (
     <div id="AboutMe" className="about-me-container">
@@ -28,7 +26,6 @@ export default function AboutMe() {
           Suspendisse malesuada imperdiet velit id aliquet.
         </p>
       </div>
-      <TextAnimation />
       <hr className="divider" />
     </div>
   );
