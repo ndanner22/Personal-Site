@@ -21,13 +21,13 @@ const ProjectCarousel: React.FC = () => {
     <div className="carousel-container">
       <div className="carousel-inner">
         <div
-          key={currentProject.id}
+          key={currentProject.project_id}
           className={`carousel-item active`}
           style={{ transform: `translateX(0)` }}
         >
           <h2>{currentProject.title}</h2>
           <p>{currentProject.description}</p>
-          <Link to={`/projects/${currentProject.id}`}>
+          <Link to={`/projects/${currentProject.project_id}`}>
             <img
               src={currentProject.image}
               alt={currentProject.title}

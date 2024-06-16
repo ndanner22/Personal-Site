@@ -5,6 +5,7 @@ import NavBar from "./Components/NavBar.tsx";
 import HomePage from "./Components/Pages/HomePage.tsx";
 import ProjectsPage from "./Components/Pages/ProjectsPage.tsx";
 import ContactPage from "./Components/Pages/ContactPage.tsx";
+import SingleProjectPage from "./Components/Pages/SingleProjectPage.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:project_id" element={<SingleProjectPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
