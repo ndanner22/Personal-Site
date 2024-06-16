@@ -213,3 +213,11 @@
 .arrow.next {
   right: 10px;
 }
+
+.project-page-container {
+  border: solid;
+}
+
+.project-page-project {
+  border: solid;
+}
