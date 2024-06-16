@@ -1,16 +1,31 @@
 import React, { FC } from "react";
 import { projects, Project } from "../../data/projectData"; // Adjust the import path as needed
+import { Link } from "react-router-dom";
 
 const ProjectPage: FC = () => {
   return (
-    <div className="project-page-container">
-      {projects.map((project: Project) => (
-        <section key={project.project_id} className="project-page-project">
-          <h1>{project.title}</h1>
-          <p>{project.description}</p>
-          {/* Add more project details here if necessary */}
-        </section>
-      ))}
+    <div className="projects-page">
+      <div className="projects-page-container">
+        {projects.map((project: Project) => (
+          <section key={project.project_id} className="project-page-project">
+            <div className="project-page-image-container">
+              <img
+                className="project-page-image"
+                src={project.image}
+                alt={project.alt}
+              />
+            </div>
+            <div className="project-page-body">
+              <h1 className="project-title">{project.title}</h1>
+              <p className="project-description">{project.description}</p>
+              {/* Add more project details here if necessary */}
+            </div>
+            <Link to={`/projects/${project.project_id}`} className="learn-more">
+              Learn More
+            </Link>
+          </section>
+        ))}
+      </div>
     </div>
   );
 };
