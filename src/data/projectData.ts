@@ -5,6 +5,7 @@ export interface Project {
   image: string;
   alt: string;
   github: string;
+  stack: string[];
 }
 
 export const projects: Project[] = [
@@ -16,6 +17,19 @@ export const projects: Project[] = [
     image: "../../public/images/stay-fresh.png",
     alt: "picture of cell phone app containing a grocery list",
     github: "https://github.com/ndanner22/Stay-Fresh-FE",
+    stack: [
+      "TypeScript",
+      "React Native",
+      "Expo Go",
+      "Axios",
+      "NativeWind",
+      "Node.js",
+      "PostgreSQL",
+      "Express.js",
+      "Firebase Auth",
+      "OpenAI",
+      "Google Cloud Vision OCR",
+    ],
   },
   {
     project_id: "2",
@@ -25,6 +39,7 @@ export const projects: Project[] = [
     image: "../../public/images/place-holder.jpeg",
     alt: "picture of homepage of a news website",
     github: "https://github.com/ndanner22/nc-news",
+    stack: ["JavaScript", "React", "CSS", "Axios", "HTML"],
   },
   {
     project_id: "3",
@@ -34,5 +49,6 @@ export const projects: Project[] = [
     image: "../../public/images/portrait.png",
     alt: "picture of JavaScript code",
     github: "https://github.com/ndanner22/news-engine",
+    stack: ["JavaScript", "PostgreSQL", "Node.js", "Express.js"],
   },
 ];
