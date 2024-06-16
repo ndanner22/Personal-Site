@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, { FC } from "react";
 import { projects, Project } from "../../data/projectData";
+import { Link } from "react-router";
 
 const SingleProjectPage: FC = () => {
   const { project_id } = useParams<{ project_id: string }>(); // Correctly destructure useParams and type it
@@ -9,8 +10,24 @@ const SingleProjectPage: FC = () => {
   );
 
   return (
-    <div>
-      <h1>Project ID: {project.title}</h1>
+    <div className="single-project-page">
+      <div className="single-project-container">
+        <h1>{project.title}</h1>
+        <img
+          src={project.image}
+          alt={project.alt}
+          className="single-project-image"
+        />
+        {project.stack.join(", ")}
+        <a href={project.github} target="_blank" rel="noopener noreferrer">
+          <img
+            src="../../../public/images/icons/github-mark.png"
+            alt="github logo"
+            className="github-logo"
+          />
+        </a>
+        {project.description}
+      </div>
     </div>
   );
 };
