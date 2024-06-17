@@ -4,15 +4,7 @@ export default function AboutMe() {
       <h2 className="title">Hi, I'm Neil 👋</h2>
       <div className="about-me-body">
         <p className="about-me-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta
-          ante lectus, ut dictum nisi interdum quis. In nec est at leo feugiat
-          mattis. Ut nec efficitur eros. Quisque ligula mi, venenatis eget ante
-          eget, dictum sodales nisl. Mauris dignissim laoreet ex, eu imperdiet
-          risus dictum id. Suspendisse et consequat magna, sed ullamcorper
-          sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Nunc accumsan vestibulum dictum. Quisque tincidunt scelerisque dui at
-          commodo. Nunc mollis sem sit amet lorem fermentum, eget porta leo
-          congue.
+          I am a software engineer based in London.
         </p>
         <p className="about-me-text">
           Pellentesque habitant morbi tristique senectus et netus et malesuada

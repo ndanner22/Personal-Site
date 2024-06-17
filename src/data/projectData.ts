@@ -6,6 +6,7 @@ export interface Project {
   alt: string;
   github: string;
   stack: string[];
+  extraimages: string[];
 }
 
 export const projects: Project[] = [
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     description:
       "StayFresh is a mobile app that uses AI to automatically scan your food items, give you reminders and recipe ideas to prevent food waste.",
     image: "../../public/images/stay-fresh.png",
+    extraimages: [],
     alt: "picture of cell phone app containing a grocery list",
     github: "https://github.com/ndanner22/Stay-Fresh-FE",
     stack: [
@@ -37,6 +39,7 @@ export const projects: Project[] = [
     description:
       "The frontend for a news website built using React and JavaScript, hosted on render.com.",
     image: "../../public/images/place-holder.jpeg",
+    extraimages: ["../../public/images/ncnews-wireframe.png"],
     alt: "picture of homepage of a news website",
     github: "https://github.com/ndanner22/nc-news",
     stack: ["JavaScript", "React", "CSS", "Axios", "HTML"],
@@ -47,6 +50,7 @@ export const projects: Project[] = [
     description:
       "The backend for a news website developed by creating a REST API using JavaScript and PostgreSQL, hosted on elephantsql.com.",
     image: "../../public/images/portrait.png",
+    extraimages: [],
     alt: "picture of JavaScript code",
     github: "https://github.com/ndanner22/news-engine",
     stack: ["JavaScript", "PostgreSQL", "Node.js", "Express.js"],
