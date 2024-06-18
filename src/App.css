@@ -312,3 +312,76 @@
 .extra-image {
   width: 500px;
 }
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container input,
+.form-container textarea {
+  border: 2px solid #040506; /* Border color equivalent to border-blue-500 */
+  border-radius: 0.375rem; /* Rounded corners equivalent to rounded-md */
+  padding: 0.5rem; /* Padding equivalent to p-2 */
+  margin: 0.75rem; /* Margin equivalent to m-3 */
+  font-size: 1rem; /* Font size equivalent to text-stone-800 */
+  width: 100%; /* Full width equivalent */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+}
+
+.form-container textarea {
+  height: 200px; /* Set the height for the textarea */
+  width: 400px;
+}
+
+.form-container button {
+  border: 1px solid #050608; /* Border color equivalent to border-blue-500 */
+  border-radius: 0.375rem; /* Rounded corners equivalent to rounded-md */
+  padding: 0.5rem; /* Padding equivalent to p-2 */
+  margin: 0.75rem; /* Margin equivalent to m-3 */
+  font-size: 1rem; /* Font size equivalent to text-stone-800 */
+  cursor: pointer;
+  width: auto; /* Allow button to adjust width based on content */
+}
+
+.form-container p {
+  text-align: center;
+  font-size: 1rem; /* Font size equivalent to text-stone-800 */
+  color: rgb(0, 0, 0);
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  font-family: "Cambria", "Cochin", Georgia, Times, "Times New Roman", serif;
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  color: #6b7280; /* Adjust the color of the placeholder text */
+}
+
+.name-container,
+.subject-container,
+.message-container {
+  display: flex;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-linkedin,
+.contact-github {
+  width: 80px;
+}

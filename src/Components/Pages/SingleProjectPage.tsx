@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import React, { FC } from "react";
 import { projects, Project } from "../../data/projectData";
-import { Link } from "react-router";
 
 const SingleProjectPage: FC = () => {
   const { project_id } = useParams<{ project_id: string }>(); // Correctly destructure useParams and type it
