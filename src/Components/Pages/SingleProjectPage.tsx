@@ -26,7 +26,15 @@ const SingleProjectPage: FC = () => {
             className="github-logo"
           />
         </a>
-        {project.description}
+        {project.extraimages.length > 0
+          ? project?.extraimages.map((extraimage) => (
+              <img src={extraimage} className="extra-image" />
+            ))
+          : null}
+
+        {project.longdescription.length > 0
+          ? project?.longdescription.map((description) => <p>{description}</p>)
+          : null}
       </div>
     </div>
   );
