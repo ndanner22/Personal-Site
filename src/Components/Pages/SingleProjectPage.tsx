@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom";
 import React, { FC } from "react";
 import { projects, Project } from "../../data/projectData";
 import { getTechIcon } from "../../utils/getTechIcons";
+import ProjectImageCarousel from "../ProjectImageCarousel";
 
 const SingleProjectPage: FC = () => {
   const { project_id } = useParams<{ project_id: string }>(); // Correctly destructure useParams and type it
-  const project: undefined | Project = projects.find(
+  const project: Project = projects.find(
     (p: Project) => p.project_id === project_id
   );
 
@@ -18,6 +19,12 @@ const SingleProjectPage: FC = () => {
           alt={project.alt}
           className="single-project-image"
         />
+        {project.longdescription.length > 0
+          ? project?.longdescription.map((description) => <p>{description}</p>)
+          : null}
+        {project.extraimages.length > 0 ? (
+          <ProjectImageCarousel project={project} />
+        ) : null}
         <div className="tech-stack">
           {project.stack.map((tech) => (
             <img
@@ -39,10 +46,6 @@ const SingleProjectPage: FC = () => {
           ? project?.extraimages.map((extraimage) => (
               <img src={extraimage} className="extra-image" />
             ))
-          : null}
-
-        {project.longdescription.length > 0
-          ? project?.longdescription.map((description) => <p>{description}</p>)
           : null}
       </div>
     </div>

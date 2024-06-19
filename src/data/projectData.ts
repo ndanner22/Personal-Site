@@ -45,7 +45,10 @@ export const projects: Project[] = [
     description:
       "The frontend for a news website built using React and JavaScript, hosted on render.com.",
     image: "../../public/images/nc-news-fe-image.png",
-    extraimages: ["../../public/images/ncnews-wireframe.png"],
+    extraimages: [
+      "../../public/images/ncnews-wireframe.png",
+      "../../public/images/nc-news-fe-image.png",
+    ],
     alt: "picture of homepage of a news website",
     github: "https://github.com/ndanner22/nc-news",
     stack: ["javascript", "react", "css", "axios", "html"],
