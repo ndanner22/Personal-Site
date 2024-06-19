@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ProjectImageModal from "./ProjectImageModal"; // Import the Modal component
 
 interface Project {
   project_id: number;
@@ -20,6 +21,8 @@ const ProjectImageCarousel: React.FC<ProjectImageCarouselProps> = ({
   project,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string>("");
 
   const goToNextSlide = () => {
     setCurrentIndex(
@@ -35,6 +38,15 @@ const ProjectImageCarousel: React.FC<ProjectImageCarouselProps> = ({
     );
   };
 
+  const openModal = (image: string) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   const currentImage = project.extraimages[currentIndex];
 
   return (
@@ -45,10 +57,13 @@ const ProjectImageCarousel: React.FC<ProjectImageCarouselProps> = ({
           className="carousel-item active"
           style={{ transform: `translateX(0)` }}
         >
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
           <img
             src={currentImage}
             alt={`${project.title} ${currentIndex + 1}`}
             className="carousel-image"
+            onClick={() => openModal(currentImage)}
           />
         </div>
       </div>
@@ -58,6 +73,10 @@ const ProjectImageCarousel: React.FC<ProjectImageCarouselProps> = ({
       <button className="arrow next" onClick={goToNextSlide}>
         Next
       </button>
+
+      {isModalOpen && (
+        <ProjectImageModal imageUrl={modalImage} onClose={closeModal} />
+      )}
     </div>
   );
 };

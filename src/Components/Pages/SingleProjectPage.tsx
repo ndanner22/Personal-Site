@@ -42,11 +42,11 @@ const SingleProjectPage: FC = () => {
             className="github-logo"
           />
         </a>
-        {project.extraimages.length > 0
+        {/* {project.extraimages.length > 0
           ? project?.extraimages.map((extraimage) => (
               <img src={extraimage} className="extra-image" />
             ))
-          : null}
+          : null} */}
       </div>
     </div>
   );
