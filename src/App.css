@@ -161,52 +161,52 @@
   align-content: center;
 }
 
-.carousel-container {
+.home-carousel-container {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 800px; /* Example maximum width */
-  margin: 0 auto; /* Center align */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.carousel-inner {
+.home-carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  position: relative; /* Ensure inner items are positioned relative to this container */
+  position: relative;
 }
 
-.carousel-item {
+.home-carousel-item {
   flex: 0 0 100%;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  position: relative; /* Ensure positioning context for absolutely positioned elements */
+  position: relative;
 }
 
-.carousel-item.active {
-  flex: 0 0 100%; /* Ensure active slide takes full width */
+.home-carousel-item.active {
+  flex: 0 0 100%;
 }
 
-.carousel-image-container {
-  width: 100%; /* Fixed width for all images */
-  height: 500px; /* Fixed height for all images */
+.home-carousel-image-container {
+  width: 100%;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Hide overflow to ensure images do not exceed container size */
-  border: 2px solid black; /* Example border */
-  position: relative; /* Ensure positioning context for absolutely positioned elements */
+  overflow: hidden;
+  border: 2px solid black;
+  position: relative;
 }
 
-.carousel-image {
-  width: 100%; /* Ensure images fill the entire width of the container */
-  height: 100%; /* Ensure images fill the entire height of the container */
-  object-fit: cover; /* Maintain aspect ratio, cover entire container */
+.home-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.arrow {
+.home-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -216,15 +216,66 @@
   padding: 10px 20px;
   cursor: pointer;
   font-size: 18px;
-  z-index: 1; /* Ensure arrows appear above carousel items */
+  z-index: 1;
 }
 
-.arrow.prev {
+.home-arrow.prev {
   left: 10px;
 }
 
-.arrow.next {
+.home-arrow.next {
   right: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 500px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: black; /* Ensure the color is visible */
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows appear above carousel items */
+  padding: 0 10px;
+}
+
+.arrow.prev {
+  left: 10px; /* Position the arrow at the left edge of the container */
+}
+
+.arrow.next {
+  right: 10px; /* Position the arrow at the right edge of the container */
 }
 
 .projects-page {

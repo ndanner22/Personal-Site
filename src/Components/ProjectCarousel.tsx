@@ -18,11 +18,11 @@ const ProjectCarousel: React.FC = () => {
   const currentProject = projects[currentIndex];
 
   return (
-    <div className="carousel-container">
-      <div className="carousel-inner">
+    <div className="home-carousel-container">
+      <div className="home-carousel-inner">
         <div
           key={currentProject.project_id}
-          className={`carousel-item active`}
+          className={`home-carousel-item active`}
           style={{ transform: `translateX(0)` }}
         >
           <h2>{currentProject.title}</h2>
@@ -31,15 +31,15 @@ const ProjectCarousel: React.FC = () => {
             <img
               src={currentProject.image}
               alt={currentProject.title}
-              className="carousel-image"
+              className="home-carousel-image"
             />
           </Link>
         </div>
       </div>
-      <button className="arrow prev" onClick={goToPrevSlide}>
+      <button className="home-arrow prev" onClick={goToPrevSlide}>
         Prev
       </button>
-      <button className="arrow next" onClick={goToNextSlide}>
+      <button className="home-arrow next" onClick={goToNextSlide}>
         Next
       </button>
     </div>
