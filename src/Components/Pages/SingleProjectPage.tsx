@@ -14,37 +14,39 @@ const SingleProjectPage: FC = () => {
     <div className="single-project-page">
       <div className="single-project-container">
         <h1>{project.title}</h1>
-        <img
-          src={project.image}
-          alt={project.alt}
-          className="single-project-image"
-        />
-        <div className="project-view">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <img
-              src="../../../public/images/icons/github-mark.png"
-              alt="github logo"
-              className="github-logo"
-            />
-          </a>
-          {project.livelink.length > 0 ? (
-            <a
-              href={project.livelink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="live-link">Live Demo</p>
+        <div className="project-top-line">
+          <img
+            src={project.image}
+            alt={project.alt}
+            className="single-project-image"
+          />
+          <div className="project-view">
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <img
+                src="../../../public/images/icons/github-mark.png"
+                alt="github logo"
+                className="github-logo"
+              />
             </a>
-          ) : null}
-          {project.projectlink.length > 0 ? (
-            <a
-              href={project.projectlink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="live-link">Project Link</p>
-            </a>
-          ) : null}
+            {project.livelink.length > 0 ? (
+              <a
+                href={project.livelink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="live-link">Live Demo</p>
+              </a>
+            ) : null}
+            {project.projectlink.length > 0 ? (
+              <a
+                href={project.projectlink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="live-link">Project Link</p>
+              </a>
+            ) : null}
+          </div>
         </div>
         {project.longdescription.length > 0
           ? project?.longdescription.map((description) => (
