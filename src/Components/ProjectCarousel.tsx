@@ -18,29 +18,33 @@ const ProjectCarousel: React.FC = () => {
   const currentProject = projects[currentIndex];
 
   return (
-    <div className="home-carousel-container">
-      <div className="home-carousel-inner">
+    <div className="carousel-container">
+      <div className="carousel-inner">
         <div
           key={currentProject.project_id}
           className={`home-carousel-item active`}
           style={{ transform: `translateX(0)` }}
         >
-          <h2>{currentProject.title}</h2>
-          <p>{currentProject.description}</p>
-          <Link to={`/projects/${currentProject.project_id}`}>
-            <img
-              src={currentProject.image}
-              alt={currentProject.title}
-              className="home-carousel-image"
-            />
-          </Link>
+          <h2 className="project-carousel-title">{currentProject.title}</h2>
+          <p className="project-carousel-description">
+            {currentProject.description}
+          </p>
+          <div className="carousel-image-container">
+            <Link to={`/projects/${currentProject.project_id}`}>
+              <img
+                src={currentProject.image}
+                alt={currentProject.title}
+                className="carousel-image"
+              />
+            </Link>
+          </div>
         </div>
       </div>
-      <button className="home-arrow prev" onClick={goToPrevSlide}>
-        Prev
+      <button className="arrow prev" onClick={goToPrevSlide}>
+        &lt;
       </button>
-      <button className="home-arrow next" onClick={goToNextSlide}>
-        Next
+      <button className="arrow next" onClick={goToNextSlide}>
+        &gt;
       </button>
     </div>
   );

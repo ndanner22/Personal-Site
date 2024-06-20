@@ -164,15 +164,22 @@
 .home-carousel-container {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  max-width: 800px;
+  width: 800px;
+  /* max-width: 800px; */
+  height: 500px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: solid;
+  padding-bottom: 10px;
 }
 
 .home-carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
   position: relative;
+  /* object-fit: contain; */
+  width: 100%;
 }
 
 .home-carousel-item {
@@ -181,57 +188,66 @@
   box-sizing: border-box;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-carousel-item.active {
   flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-carousel-title,
+.project-carousel-description {
+  margin-bottom: 8px;
 }
 
 .home-carousel-image-container {
   width: 100%;
-  height: 500px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 2px solid black;
+  padding: 5px;
   position: relative;
 }
 
 .home-carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
   z-index: 1;
+  background: transparent;
 }
 
 .home-arrow.prev {
-  left: 10px;
+  left: 70px;
 }
 
 .home-arrow.next {
-  right: 10px;
+  right: 70px;
 }
 
 .carousel-container {
   position: relative;
   width: 80%;
+  height: 500px; /* Fixed height for the carousel */
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,6 +256,8 @@
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure inner container takes the full width */
+  height: 100%; /* Ensure inner container takes the full height */
 }
 
 .carousel-item {
@@ -247,13 +265,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%; /* Ensure item takes the full height */
 }
 
 .carousel-image {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 100%;
   cursor: pointer;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image covers the container without distorting aspect ratio */
   border-radius: 10px;
 }
 
@@ -271,11 +290,11 @@
 }
 
 .arrow.prev {
-  left: 10px; /* Position the arrow at the left edge of the container */
+  left: -35px; /* Position the arrow at the left edge of the container */
 }
 
 .arrow.next {
-  right: 10px; /* Position the arrow at the right edge of the container */
+  right: -35px; /* Position the arrow at the right edge of the container */
 }
 
 .projects-page {
@@ -345,7 +364,7 @@
 }
 
 .github-logo {
-  width: 100px;
+  width: 70px;
 }
 
 .single-project-container {
@@ -357,6 +376,21 @@
   gap: 20px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.project-view {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.live-link {
+  font-size: 24px;
+}
+
+.project-long-description {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .extra-image {

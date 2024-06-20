@@ -8,6 +8,8 @@ export interface Project {
   stack: string[];
   extraimages: string[];
   longdescription: string[];
+  livelink: string;
+  projectlink: string;
 }
 
 export const projects: Project[] = [
@@ -17,9 +19,18 @@ export const projects: Project[] = [
     description:
       "StayFresh is a mobile app that uses AI to automatically scan your food items, give you reminders and recipe ideas to prevent food waste.",
     image: "../../public/images/stay-fresh.png",
-    extraimages: [],
+    extraimages: [
+      "../../public/images/main-wireframes-stayfresh.png",
+      "../../public/images/wireframes-stayfresh-2.png",
+      "../../public/images/wireframes-stayfresh-3.png",
+      "../../public/images/stayfresh-component-tree.png",
+      "../../public/images/stayfresh-user-stories.png",
+      "../../public/images/stayfresh-task-breakdown.png",
+    ],
     alt: "picture of cell phone app containing a grocery list",
     github: "https://github.com/ndanner22/Stay-Fresh-FE",
+    livelink: "",
+    projectlink: "https://northcoders.com/project-phase/stayfresh",
     stack: [
       "typescript",
       "reactnative",
@@ -47,10 +58,14 @@ export const projects: Project[] = [
     image: "../../public/images/nc-news-fe-image.png",
     extraimages: [
       "../../public/images/ncnews-wireframe.png",
-      "../../public/images/nc-news-fe-image.png",
+      "../../public/images/nc-news-fe-1.png",
+      "../../public/images/nc-news-fe-2.png",
+      "../../public/images/nc-news-fe-3.png",
     ],
     alt: "picture of homepage of a news website",
     github: "https://github.com/ndanner22/nc-news",
+    projectlink: "",
+    livelink: "https://ncn-news.netlify.app/",
     stack: ["javascript", "react", "css", "axios", "html"],
     longdescription: [
       "For NC-News frontend, I successfully used the backend created in my previous project to host a dynamic React web application, allowing clients to easily view, access and update the news article information as they need. This was my first experience using React and I loved how much cleaner and more intuitive it felt compared to creating a Multipage HTML site. While mastering React's component-based architecture presented a learning curve, it allowed me to really hone my skills in meticulously wireframing.",
@@ -62,10 +77,15 @@ export const projects: Project[] = [
     title: "NC-News Backend",
     description:
       "The backend for a news website developed by creating a REST API using JavaScript and PostgreSQL, hosted on elephantsql.com.",
-    image: "../../public/images/portrait.png",
-    extraimages: [],
+    image: "../../public/images/nc-news-be-1.png",
+    livelink: "https://new-engine.onrender.com/api",
+    extraimages: [
+      "../../public/images/nc-news-be-2.png",
+      "../../public/images/nc-news-be-3.png",
+    ],
     alt: "picture of JavaScript code",
     github: "https://github.com/ndanner22/news-engine",
+    projectlink: "",
     stack: ["javascript", "postgres", "nodejs", "express"],
     longdescription: [
       "For this project I designed a RESTful API creating a backend for a news web application. This was the first time I created a live backend, so I was very careful to implement a thorough CRUD system for articles and comments. One key challenge of this project was anticipating frontend needs to provide the client with the best experience possible. By carefully planning ahead and understanding the abilities of PostgreSQL I was able to create the needed API endpoints that would enable a dynamic and interactive frontend.",
