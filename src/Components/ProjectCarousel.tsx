@@ -22,22 +22,24 @@ const ProjectCarousel: React.FC = () => {
       <div className="carousel-inner">
         <div
           key={currentProject.project_id}
-          className={`home-carousel-item active`}
+          className={`carousel-item active`}
           style={{ transform: `translateX(0)` }}
         >
-          <h2 className="project-carousel-title">{currentProject.title}</h2>
-          <p className="project-carousel-description">
-            {currentProject.description}
-          </p>
-          <div className="carousel-image-container">
-            <Link to={`/projects/${currentProject.project_id}`}>
-              <img
-                src={currentProject.image}
-                alt={currentProject.title}
-                className="carousel-image"
-              />
-            </Link>
+          <div>
+            <h2 className="project-carousel-title">{currentProject.title}</h2>
+            <p className="project-carousel-description">
+              {currentProject.description}
+            </p>
           </div>
+          {/* <div className="carousel-image-container"> */}
+          <Link to={`/projects/${currentProject.project_id}`}>
+            <img
+              src={currentProject.image}
+              alt={currentProject.title}
+              className="carousel-image"
+            />
+          </Link>
+          {/* </div> */}
         </div>
       </div>
       <button className="arrow prev" onClick={goToPrevSlide}>
