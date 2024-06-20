@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   padding: 1rem 0; /* Example padding */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .header-container {
@@ -169,8 +169,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  border: solid;
-  padding-bottom: 10px;
   align-items: center;
 }
 
@@ -179,23 +177,20 @@
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  border: solid;
+}
+
+.home-project-headline {
+  text-align: center;
 }
 
 .home-carousel-item {
   flex: 0 0 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 20px;
   height: 100%;
-  border: solid;
-}
-
-.home-carousel-item.active {
-  flex: 0 0 100%;
-  display: flex;
-  flex-direction: column;
-  border: solid;
 }
 
 .project-carousel-title,
@@ -203,23 +198,22 @@
   margin-bottom: 8px;
 }
 
-/* .home-carousel-image-container {
+.home-carousel-image-container {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   overflow: hidden;
-  padding: 5px;
-  position: relative;
-} */
+  padding: 10px;
+}
 
 .home-carousel-image {
-  max-width: 100%;
   max-height: 100%;
+  max-width: 100%;
   cursor: pointer;
   object-fit: contain;
   border-radius: 8px;
+  box-shadow: 5px 5px rgb(139, 139, 139);
 }
 
 .home-arrow {
@@ -236,11 +230,11 @@
 }
 
 .home-arrow.prev {
-  left: 70px;
+  left: 100px;
 }
 
 .home-arrow.next {
-  right: 70px;
+  right: 100px;
 }
 
 .carousel-container {
