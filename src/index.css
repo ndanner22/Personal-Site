@@ -20,9 +20,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
   padding-top: 20px;
-  background: linear-gradient(
-    to right,
-    rgba(92, 235, 237, 0.614),
-    rgba(178, 117, 234, 0.564)
+  background: conic-gradient(
+    #00f5d4 90deg,
+    #fee440 90deg 180deg,
+    #00f5d4 180deg 270deg,
+    #fee440 270deg
   );
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  background-position: top left;
 }
