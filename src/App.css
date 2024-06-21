@@ -170,7 +170,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid;
 }
 
 .home-carousel-inner {
@@ -192,6 +191,10 @@
   align-items: center;
   padding: 20px;
   height: 100%;
+  border: 1px solid hsl(0, 0%, 4%);
+  border-radius: 10px;
+  box-shadow: 8px 10px 8px hsla(0, 0%, 0%, 0.5);
+  background-color: white;
 }
 
 .project-carousel-title,
@@ -213,8 +216,8 @@
   max-width: 100%;
   cursor: pointer;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 5px 5px rgb(139, 139, 139);
+  /* border-radius: 8px;
+  border: 1px solid; */
 }
 
 .home-arrow {
