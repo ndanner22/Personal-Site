@@ -323,6 +323,7 @@
   padding: 10px;
   gap: 20px;
   align-items: flex-start; /* Align items to the top */
+  box-shadow: 8px 10px 8px hsla(0, 0%, 0%, 0.5);
 }
 
 .project-page-image-container {
