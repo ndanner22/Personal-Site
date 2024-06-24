@@ -233,11 +233,11 @@
 }
 
 .home-arrow.prev {
-  left: 50px;
+  left: 0px;
 }
 
 .home-arrow.next {
-  right: 50px;
+  right: 0px;
 }
 
 .carousel-container {
