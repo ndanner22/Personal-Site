@@ -81,7 +81,7 @@
 .about-me-text {
   font-size: 20px;
   width: 80%;
-  text-align: center;
+  text-align: flex-start;
 }
 
 .projects-container {
