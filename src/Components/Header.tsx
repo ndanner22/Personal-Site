@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header-container">
@@ -18,4 +19,6 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;
