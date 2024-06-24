@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { projects, Project } from "../../data/projectData"; // Adjust the import path as needed
+import { projects, Project } from "../../data/projectData";
 import { Link } from "react-router-dom";
 
 const ProjectPage: FC = () => {
@@ -18,7 +18,6 @@ const ProjectPage: FC = () => {
             <div className="project-page-body">
               <h1 className="project-title">{project.title}</h1>
               <p className="project-description">{project.description}</p>
-              {/* Add more project details here if necessary */}
             </div>
             <Link to={`/projects/${project.project_id}`} className="learn-more">
               Learn More
