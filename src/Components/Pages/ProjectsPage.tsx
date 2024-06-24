@@ -19,6 +19,7 @@ const ProjectPage: FC = () => {
               <h1 className="project-title">{project.title}</h1>
               <p className="project-description">{project.description}</p>
             </div>
+
             <Link to={`/projects/${project.project_id}`} className="learn-more">
               Learn More
             </Link>
