@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <div className="header">
       <div className="header-container">
-        <img
-          className="header-photo"
-          src="../../public/images/portrait.png"
-          alt="picture of Neil"
-        />
+        <Link to="/">
+          <img
+            className="header-photo"
+            src="../../public/images/portrait.png"
+            alt="picture of Neil"
+          />
+        </Link>
         <div className="header-text">
           <h1>Neil Danner</h1>
           <p>Junior Software Engineer</p>
