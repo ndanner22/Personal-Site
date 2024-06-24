@@ -58,7 +58,7 @@ export const projects: Project[] = [
     project_id: "2",
     title: "NC-News Frontend",
     description:
-      "The frontend for a news website built using React and JavaScript, hosted on render.com.",
+      "The frontend for a news website built using React and JavaScript, hosted on netlify.com.",
     image: "../../images/nc-news-fe-image.png",
     extraimages: [
       "../../images/ncnews-wireframe.png",
