@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
           <div className="message-container">
             <textarea
               id="message"
-              placeholder="Message"
+              placeholder="Message..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required

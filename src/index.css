@@ -20,8 +20,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
   padding-top: 20px;
-  background-color: rgb(230, 230, 230);
-  /* background: conic-gradient(
+  background-color: rgb(245, 242, 242); /* Light grey fallback */
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 242, 242),
+    rgb(220, 214, 214)
+  );
+}
+/* background: conic-gradient(
     #00f5d4 90deg,
     #fee440 90deg 180deg,
     #00f5d4 180deg 270deg,
@@ -29,5 +35,6 @@ body {
   );
    background-repeat: repeat; 
   background-size: 60px 60px;
-  background-position: top left; */
-}
+  background-position: top left; 
+  keep around for checkboad background idea
+  */
