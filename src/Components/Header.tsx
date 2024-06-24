@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <Link to="/">
           <img
             className="header-photo"
-            src="../../public/images/portrait.png"
+            src="../../images/portrait.png"
             alt="picture of Neil"
           />
         </Link>
