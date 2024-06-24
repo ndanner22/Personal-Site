@@ -233,11 +233,11 @@
 }
 
 .home-arrow.prev {
-  left: 100px;
+  left: 50px;
 }
 
 .home-arrow.next {
-  right: 100px;
+  right: 50px;
 }
 
 .carousel-container {
@@ -291,11 +291,11 @@
 }
 
 .arrow.prev {
-  left: -35px;
+  left: 0px;
 }
 
 .arrow.next {
-  right: -35px;
+  right: 0px;
 }
 
 .projects-page {
