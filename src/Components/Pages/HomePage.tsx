@@ -1,8 +1,9 @@
+import React from "react";
 import AboutMe from "../AboutMe";
 import HomeProjects from "../HomeProjects";
 import Footer from "../Footer";
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <>
       <AboutMe />
@@ -10,4 +11,6 @@ export default function HomePage() {
       <Footer />
     </>
   );
-}
+};
+
+export default HomePage;
