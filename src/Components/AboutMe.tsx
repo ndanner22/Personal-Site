@@ -1,4 +1,6 @@
-export default function AboutMe() {
+import React from "react";
+
+const AboutMe: React.FC = () => {
   return (
     <div id="AboutMe" className="about-me-container">
       <h2 className="title">Hi, I'm Neil</h2>
@@ -24,4 +26,6 @@ export default function AboutMe() {
       <hr className="divider" />
     </div>
   );
-}
+};
+
+export default AboutMe;
