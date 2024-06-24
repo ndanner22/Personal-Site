@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { projects } from "../data/projectData"; // Assuming ProjectsData is correctly imported
+import { projects } from "../data/projectData";
 import { Link } from "react-router-dom";
 
 const ProjectCarousel: React.FC = () => {

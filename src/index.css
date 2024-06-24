@@ -20,7 +20,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   padding-top: 20px;
-  background-color: rgb(245, 242, 242); /* Light grey fallback */
+  background-color: rgb(245, 242, 242);
   background-image: linear-gradient(
     to right,
     rgb(245, 242, 242),
