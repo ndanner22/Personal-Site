@@ -5,10 +5,13 @@ import { getTechIcon } from "../../utils/getTechIcons";
 import ProjectImageCarousel from "../ProjectImageCarousel";
 
 const SingleProjectPage: FC = () => {
-  const { project_id } = useParams<{ project_id: string }>(); // Correctly destructure useParams and type it
+  const { project_id } = useParams<{ project_id: string }>();
   const project: Project | undefined = projects.find(
     (p: Project) => p.project_id === project_id
   );
+  if (!project) {
+    return <div>Project not found.</div>;
+  }
 
   return (
     <div className="single-project-page">
