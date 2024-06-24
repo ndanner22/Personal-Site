@@ -26,7 +26,7 @@ const SingleProjectPage: FC = () => {
           <div className="project-view">
             <a href={project.github} target="_blank" rel="noopener noreferrer">
               <img
-                src="../../../public/images/icons/github-mark.png"
+                src="../../../images/icons/github-mark.png"
                 alt="github logo"
                 className="github-logo"
               />

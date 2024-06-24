@@ -31,7 +31,6 @@ const ContactForm: React.FC = () => {
       }
     );
 
-    // Clear form fields after submission
     setName("");
     setEmail("");
     setMessage("");
@@ -85,7 +84,7 @@ const ContactForm: React.FC = () => {
         >
           <img
             className="contact-github"
-            src="../../../public/images/icons/github-mark.png"
+            src="../../../images/icons/github-mark.png"
             alt="github logo"
           />
         </a>
@@ -95,8 +94,8 @@ const ContactForm: React.FC = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="../../../public/images/icons/linkedin.png"
-            alt="github logo"
+            src="../../../images/icons/linkedin.png"
+            alt="linkedin logo"
             className="contact-linkedin"
           />
         </a>
