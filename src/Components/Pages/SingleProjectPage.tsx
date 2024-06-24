@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
-import React, { FC } from "react";
+import { FC } from "react";
 import { projects, Project } from "../../data/projectData";
 import { getTechIcon } from "../../utils/getTechIcons";
 import ProjectImageCarousel from "../ProjectImageCarousel";
 
 const SingleProjectPage: FC = () => {
   const { project_id } = useParams<{ project_id: string }>(); // Correctly destructure useParams and type it
-  const project: Project = projects.find(
+  const project: Project | undefined = projects.find(
     (p: Project) => p.project_id === project_id
   );
 
