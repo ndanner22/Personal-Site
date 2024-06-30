@@ -12,7 +12,7 @@ const ProjectImageModal: React.FC<ModalProps> = ({ imageUrl, onClose }) => {
         <span className="close" onClick={onClose}>
           &times;
         </span>
-        <img src={imageUrl} alt="Enlarged" className="modal-image" />
+        <img src={imageUrl} alt="Enlarged image" className="modal-image" />
       </div>
     </div>
   );
